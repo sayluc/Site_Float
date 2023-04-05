@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/ninjato.png" rel="shortcut icon" type="image/png">
+    <title>Site Float</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: dimgrey;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 50px;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .clear{
+            clear: both;
+        }
+
+        .container{
+            background-color: white;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            max-width: 950px;
+            margin-top: 20px;
+            padding: 10px;
+            margin: auto;
+            width: 80%;
+        }
+
+        .topo{
+            width: 100%;
+            background-color: black;
+            color: white;
+            float: left;
+            padding: 20px;          
+        }
+
+        .lateral{
+            width: 30%;
+            float: left;
+            position: sticky;
+            top: 0px;
+        }
+
+        .conteudo{
+            width: 70%;
+            float: left;
+            padding-left: 10px;
+        }
+
+        .rodape{
+            background-color: black;
+            color: white;
+            padding: 15px;
+            width: 100%;
+            float: left;
+        }
+
+        .lateral ul{
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .lateral ul a{
+            background-color: brown;
+            text-decoration: none;
+            margin-bottom: 3px;
+            color: white;
+            display: block;
+            padding: 10px;
+            width: 90%;
+        }
+
+        .citacao{
+            background-color: bisque;
+            margin-bottom: 10px;
+            position: relative;
+            color: black;
+            padding: 10px;
+        }
+
+        .titulo{
+            position: inherit;
+            background-color: salmon;
+            border-radius: 5px;
+            font-size: 10px;
+            color: white;
+            padding: 7px;
+            left: -15px;
+            top: -15px;
+        }
+
+        .whatsapp{
+            background-color: green;
+            text-align: center;
+            font-weight: bold;
+            position: fixed;
+            color: white;
+            padding: 10px;
+            width: 200px;
+            bottom: 20px;
+            right: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <div class="topo">
+            <h1>Website Design</h1>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="lateral">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact me</a></li>
+            </ul>
+        </div>
+
+        <div class="conteudo">
+            <h1>Website Example</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis delectus, provident quisquam inventore deleniti rerum. Deleniti ab natus ad repudiandae eos, dignissimos nemo blanditiis laboriosam, amet, optio provident placeat magni?</p>
+            <div class="citacao">
+                <div class="titulo">Title</div>
+                Text
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis delectus, provident quisquam inventore deleniti rerum. Deleniti ab natus ad repudiandae eos, dignissimos nemo blanditiis laboriosam, amet, optio provident placeat magni?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis delectus, provident quisquam inventore deleniti rerum. Deleniti ab natus ad repudiandae eos, dignissimos nemo blanditiis laboriosam, amet, optio provident placeat magni?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis delectus, provident quisquam inventore deleniti rerum. Deleniti ab natus ad repudiandae eos, dignissimos nemo blanditiis laboriosam, amet, optio provident placeat magni?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis delectus, provident quisquam inventore deleniti rerum. Deleniti ab natus ad repudiandae eos, dignissimos nemo blanditiis laboriosam, amet, optio provident placeat magni?</p>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="rodape">
+            &copy; 2023 - Lucca Firmo da Cruz &trade;
+        </div>
+        <div class="clear"></div>
+
+    </div>
+
+    <div class="whatsapp">
+        Contact us
+    </div>
+    
+</body>
+
+</html>

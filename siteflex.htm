@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiteFlex</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: lightslategray;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: white;
+            width: 80%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 5px;
+        }
+        .cabecalho {
+            display: flex;
+            padding: 10px;
+            justify-content: space-between;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(100, 100, 100);
+        }
+        .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+        }
+        .menu a:hover {
+            background-color:rgb(126, 0, 0);
+            transition: 0.2s;
+        }
+        .logo img{
+            max-width: 250px;
+        }
+        .usuario {
+            align-self: center;
+        }
+        .corpo {
+            display: flex;
+        }
+        .conteudo {
+            flex: 70%;
+            padding: 15px;
+        }
+        .conteudo img {
+            max-width: 100%;
+        }
+        .lateral {
+            flex: 30%;
+        }
+        .rodape {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(49, 49, 49);
+            color: white;
+            padding: 1px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="/exemplo/img/logo senac.png" alt="logo">
+            </div>
+            <div class="usuario">
+                <input type="button" value="Entrar">
+            </div>
+        </div>
+
+        <div class="menu">
+            <a href="#">Início</a>
+            <a href="#">Loja</a>
+            <a href="#">Quem somos</a>
+            <a href="#">Contato</a>
+        </div>
+
+        <div class="corpo">
+            <div class="conteudo">
+                <h2>Senac oferece cursos gratuitos.</h2>
+                <img src="/exemplo/img/senas.jpg">
+                <p>Senac de pinda Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque ab similique esse
+                    totam mollitia fuga facilis, pariatur nam inventore earum quam, accusantium nisi molestias aliquid
+                    illum aspernatur? Ipsum, corrupti facilis?</p>
+                <hr>
+                <h2>Senac oferece cursos pagos.</h2>
+                <img src="/exemplo/img/senas.jpg">
+                <p>Senac de pinda Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque ab similique esse
+                    totam mollitia fuga facilis, pariatur nam inventore earum quam, accusantium nisi molestias aliquid
+                    illum aspernatur? Ipsum, corrupti facilis?</p>
+            </div>
+
+            <div class="lateral">
+                <h3>Comentários Recentes</h3>
+                <ul>
+                    <li><b>Robson:</b> Que legal essa noticia!</li><br>
+                    <li><b>Cleber:</b> Odiei esse site... grrr</li><br>
+                    <li><b>Ana:</b> Cade meu filho??</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rodape">
+            <p>&copy; SiteFlex 2023 - All rights reserved. &trade;</p>
+        </div>
+    </div>
+</body>
+</html>
